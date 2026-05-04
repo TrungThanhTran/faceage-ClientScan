@@ -2,6 +2,8 @@
 
 > **🏆 State-of-the-art face-only age estimation — MAE 3.555 on LAGENDA 84k, beating MiVOLO v2 paper (3.650) - the best specific task model using only the face crop.**
 
+> **Benchmark on 8 datasets ~ 4.9 - the runner-up among several benchmark including VLMs**
+
 Age and gender estimation from face crops using **DINOv3-ViT-L** backbone with CORAL ordinal regression.
 
 - 🤗 **Model**: [TrungTran/faceage_ClientScan](https://huggingface.co/TrungTran/faceage_ClientScan)
@@ -36,6 +38,20 @@ Age and gender estimation from face crops using **DINOv3-ViT-L** backbone with C
 
 Wins **6/7 age groups** vs MiVOLO v2.
 
+### on several age dataset
+The benchmark mechanism following this paper: [Out of the box age estimation through facial imagery: A Comprehensive Benchmark of Vision-Language Models vs. out-of-the-box Traditional Architectures](https://arxiv.org/pdf/2602.07815)
+
+| Dataset |	Ours ONNX MAE |
+|---------|-----------|
+| UTK	  |   5.225	  |
+| IMDB	  |   5.119   |
+| MORPH	  |   4.235	  |
+| AFAD	  |   3.520	  |
+| CACD	  |   5.314	  |
+| FG-NET  |   4.550	  |
+| APPA	  |   5.172	  |
+| AgeDB	  |   5.933	  |
+| **Avg**  |   **4.884**|
 ---
 
 ## Quick Start (ONNX — no PyTorch needed)
